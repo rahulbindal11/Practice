@@ -11,16 +11,17 @@ void *print_even(void *i)
 {
 	
 	int a = *(int*)i;
-	pthread_mutex_lock(&lock);	
+		
 	for (int x=1; x<=a; x++)
 
 	if(x%2==0)
 	{
 		
-			
+		pthread_mutex_lock(&lock);	
 		printf("EVEN : %d\n",x);
 		pthread_mutex_unlock(&lock);
 		sleep(1);
+		
 
 	}    
 
@@ -35,12 +36,10 @@ void *print_odd(void *i)
 	if(x%2!=0)
 	{
 		
-		pthread_mutex_unlock(&lock);
-		//sleep(1);
-		printf("ODD : %d\n",x);
-		
-		sleep(1);
 		pthread_mutex_lock(&lock);
+		printf("ODD : %d\n",x);
+		pthread_mutex_unlock(&lock);
+		sleep(1);
 	}    
 
     return 0;
