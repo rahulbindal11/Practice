@@ -5,7 +5,7 @@
 void *threadfun(void *i)
 {
 	sleep(1);
-	int a = i;
+	int a = *(int*)i;
 	for(int j=1;j<a;j++)
 	{
 		printf("%d\n",j);

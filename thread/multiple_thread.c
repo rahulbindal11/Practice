@@ -40,7 +40,7 @@ void *print_t3(void *i)
 		x++;
 		sleep(1); 
 	}
-    return 0;
+    //return 0;
 }
 
 int main(void)
