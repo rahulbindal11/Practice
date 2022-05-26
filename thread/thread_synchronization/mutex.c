@@ -19,6 +19,7 @@ void *print_even(void *i)
 		
 		pthread_mutex_lock(&lock);	
 		printf("EVEN : %d\n",x);
+		printf("bindal");
 		pthread_mutex_unlock(&lock);
 		sleep(1);
 		

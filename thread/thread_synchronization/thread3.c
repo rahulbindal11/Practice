@@ -17,7 +17,7 @@ void *print_even(void *i)
 	if(x%2==0)
 	{
 		//sem_wait(&sem_var);
-			
+		printf("Mooooooooooooooooooodiiiiiiiiiiiii");	
 		printf("EVEN : %d\n",x);
 		
 		//sem_post(&sem_var);

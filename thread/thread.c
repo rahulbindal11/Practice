@@ -6,9 +6,12 @@ void *threadfun(void *i)
 {
 	sleep(1);
 	int a = *(int*)i;
+	printf("%d\n",getpid());
 	for(int j=1;j<a;j++)
 	{
+		
 		printf("%d\n",j);
+		sleep(5);
 	}
 }
 int main()
