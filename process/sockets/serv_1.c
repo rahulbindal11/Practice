@@ -28,8 +28,13 @@ void func(int connfd)
 		write(connfd, buff, sizeof(buff));
 
 		if (strncmp("exit", buff, 4) == 0) {
-			printf("Server Exit...\n");
+			printf("Server Exit...\n");			
 			break;
+			/*
+			char sendBuff[1025];
+			memset(sendBuff, ‘0’, sizeof(sendBuff));
+			char sendBuff[1025] = {0};
+			*/
 		}
 	}
 }

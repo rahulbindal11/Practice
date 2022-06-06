@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header.h"
 
-int main(){
+void main(){
 
 	printf("\n main function \n");
 	printf("\n calling hello function");
